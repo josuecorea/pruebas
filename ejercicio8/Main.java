@@ -1,4 +1,4 @@
-package ejercicio8_guia6;
+package ejercicio8;
 
 import java.util.Scanner;
 
