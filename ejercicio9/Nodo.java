@@ -1,4 +1,4 @@
-package ejercicio9_guia6;
+package ejercicio9;
 
 public class Nodo {
 

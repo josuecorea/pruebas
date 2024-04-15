@@ -1,4 +1,4 @@
-package ejercicio9_guia6;
+package ejercicio9;
 
 import javax.swing.JOptionPane;
 
@@ -34,31 +34,27 @@ public class Main {
                     case 3:
 
                         if (!miPila.estaVacia()) {
-
                             int anterior = miPila.eliminarNodo();
 
                             JOptionPane.showMessageDialog(null, "Se elimina: " + anterior);
 
-                            int actual = miPila.eliminarNodo();
-
-                            if (actual < anterior) {
-
-                                JOptionPane.showMessageDialog(null, "Se elimina: " + actual);
-                                anterior = actual;
-
+                            if(!miPila.estaVacia()){
+                                int actual = miPila.eliminarNodo();
+                                if (actual < anterior) {
+                                    JOptionPane.showMessageDialog(null, "Se elimina: " + actual);
+                                } else {
+                                    JOptionPane.showMessageDialog(null, "No se puede eliminar el dato " + actual);
+                                    miPila.insertarNodo(actual); // Volvemos a insertar el dato
+                                }                                
                             } else {
-
-                                JOptionPane.showMessageDialog(null, "No se puede eliminar el dato " + actual);
-                                miPila.insertarNodo(actual); // Volvemos a insertar el dato
-                                break;
+                                JOptionPane.showMessageDialog(null, "La pila está vacía");
                             }
-
                         } else {
-                            
                             JOptionPane.showMessageDialog(null, "La pila está vacía");
                         }
                         break;
 
+                        
                     case 4:
 
                         JOptionPane.showMessageDialog(null, "\nPROGRAMA FINALIZADO");
