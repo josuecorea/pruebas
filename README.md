@@ -5,7 +5,7 @@ Para el paseo aleatorio con valor de inicio aleatorio, sea:
 $y_{t}=y_{0}+e_{t}+\cdots +e_{1}$; $t>0$ $\wedge$ $E\left [ y_{0} \right ]=M_{0}$ $\wedge$ $V\left ( y_{0} \right )=\sigma_{0}^{2}$ $\wedge$ $y_{0},e_{1},\cdots ,e_{t}$
 
 son independientes.
-Demuestre que $E\left [ y_{t} \right ]=M_{0}; \forall t$
+Demuestre que $E\left [ y_{t} \right ]=\mu_{0}; \forall t$
 
 **DEMOSTRACIÓN**
 
